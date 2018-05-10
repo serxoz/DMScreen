@@ -1,0 +1,14 @@
+GET JWT Token:
+curl -X POST -H "Content-Type: application/json" -d '{"username":"<username>","password":"<passoword>"}' http://127.0.0.1:8000/auth/obtain_token/
+
+Refresh Token:
+curl -X POST -H "Content-Type: application/json" -d '{"token":"<token>"}' http://localhost:8000/auth/refresh_token/
+
+Verify Token:
+curl -X POST -H "Content-Type: application/json" -d '{"token":"<token>"}' http://localhost:8000/auth/verify_token/
+    200 OK
+    400 Bad Request, Example: {"non_field_errors":["Signature has expired."]}
+
+
+Access to a protected URL:
+curl -H "Authorization: JWT <your_token>" http://localhost:8000/protected-url/
