@@ -1,1 +1,3 @@
 *.pyc
+backend/static/
+backend/dmscreen_backend/settings.py

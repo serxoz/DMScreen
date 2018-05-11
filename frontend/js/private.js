@@ -1,6 +1,7 @@
 $( function() {
   //Verify token:
-  var API = "http://127.0.0.1:8000";
+  //var API = "http://127.0.0.1:8000";
+  var API = "http://dmscreen-api.tr4ck.net/";
 
   if (localStorage.token) {
     tk = localStorage.token;

@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     console.log( "GO!" );
-    var API = "http://127.0.0.1:8000";
+    //var API = "http://127.0.0.1:8000";
+    var API = "http://dmscreen-api.tr4ck.net/";
 
     $(".login-form").submit(function( event ) {
       event.preventDefault();
