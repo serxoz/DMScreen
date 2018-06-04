@@ -16,12 +16,14 @@ $( function() {
       },
       error: function(data) {
         console.log(data);
-        window.location.replace("index.html");
+        // window.location.replace("index.html");
+        window.location.replace("/");
         //We could try here to renew the token...
       }
     });
   }else{
-    window.location.replace("index.html");
+    // window.location.replace("index.html");
+    window.location.replace("/");
   }
 
   //logout

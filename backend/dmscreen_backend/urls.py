@@ -18,13 +18,16 @@ from rest_framework import routers
 from django.contrib import admin
 from test_app import views
 from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token, verify_jwt_token
+from django.views.generic.base import TemplateView
+from web.views import HomeView, PrivateView
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url(r'^$', HomeView.as_view()),
+    url(r'^private', PrivateView.as_view()),
     url(r'^admin/', admin.site.urls),
 
     url(r'^auth/obtain_token/', obtain_jwt_token),
