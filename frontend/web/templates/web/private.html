@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>DM SCreen - Private</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="/static/css/login.css">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylecheet" href="https://code.jquery.com/ui/1.12.1/themes/vader/jquery-ui.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+
+  <div id="tabla1" class="ui-widget-content draggable" style="display: inline-block; border: 1px black solid; padding: 0 0px 0px 0px;">
+    <div id="header" class="ui-widget-header" style="margin-top:0px; background-color: pink; padding: 0px 10px 0px 10px;cursor: pointer;">
+      <span>Tabla 1</span>
+      <button class="btn_min" style="margin-right: -10px;" data-tableid="tabla1">_</button>
+    </div>
+    <div style="background-color: white;">
+      <table style="border: 0px; width:100%;">
+        <tr>
+          <td>A</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="tabla2" class="ui-widget-content draggable" style="display: inline-block; border: 1px black solid; padding: 0 0px 0px 0px;">
+    <div id="header" class="ui-widget-header" style="margin-top:0px; background-color: pink; padding: 0px 10px 0px 10px;cursor: pointer;">
+      <span>Tabla 2</span>
+      <button class="btn_min" style="margin-right: -10px;" data-tableid="tabla2">_</button>
+    </div>
+    <div style="background-color: white;">
+      <table style="border: 0px; width:100%;">
+        <tr>
+          <td>A</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+  <footer style="background-color: #dadada;width: 100%;bottom: 0;position: fixed;">
+    <button class="btn_task_bar" data-tableid="tabla1">Tabla 1</button>
+    <button class="btn_task_bar" data-tableid="tabla2">Tabla 2</button>
+  </footer>
+
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="/static/js/private.js"></script>
+</body>
+</html>
